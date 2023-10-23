@@ -40,6 +40,15 @@ print(w)		# output: 160.2
 print(new_person)	
 # output: {'name': 'Jack', 'age': 38, 'has_glasses': False, 'hobbies': ['climbing', 'coding']}    
 
+person = {"first": "Ada", "last": "Lovelace", "age": 42, "is_organ_donor": True}
+# Adds a new key value pair for email to person
+person["email"] = "alovelace@codingdojo.com"
+        
+# Changes person's "last" value to "Bobada"
+person["last"] = "Bobada"
+print(person)
+
+
 #Common functions: use "type" function to identify the varialble or value data type
 print(type(2.65)) #output float
 print(type(new_person)) #output dict

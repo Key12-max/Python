@@ -23,4 +23,31 @@ count= 0
 while count <=5:
     print("looping -", count)
     count+=1
-    
+
+#For Loops through Dictionaries:When we iterate through a dictionary, the iterator is each of the keys of the dictionary.
+
+my_dict = { "name": "Noelle", "language": "Python" }
+for each_key in my_dict:
+    print(each_key)
+# output: name, language
+
+#That means if we want the values of our dictionary, we might do something like this:
+my_dict = { "name": "Noelle", "language": "Python" }
+for each_key in my_dict:
+    print(my_dict[each_key])
+# output: Noelle, Python
+#Dictionaries also have a few additional methods that allow us to iterate through them and have the keys and/or values as the iterator. Test these out to get a better understanding:
+capitals = {"Washington":"Olympia","California":"Sacramento","Idaho":"Boise","Illinois":"Springfield","Texas":"Austin","Oklahoma":"Oklahoma City","Virginia":"Richmond"}
+# another way to iterate through the keys
+for key in capitals.keys():
+    print(key)
+# output: Washington, California, Idaho, Illinois, Texas, Oklahoma, Virginia
+#to iterate through the values
+for val in capitals.values():
+    print(val)
+# output: Olympia, Sacramento, Boise, Springfield, Austin, Oklahoma City, Richmond
+#to iterate through both keys and values
+for key, val in capitals.items():
+    print(key, " = ", val)
+# output: Washington = Olympia, California = Sacramento, Idaho = Boise, etc
+
