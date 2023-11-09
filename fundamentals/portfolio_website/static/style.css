@@ -42,4 +42,13 @@ text-decoration: underline;
 footer {
 text-align: center;
 margin-top: 20px;
+background-color: transparent;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+}
+#contact form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
 }
