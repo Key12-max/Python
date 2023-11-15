@@ -25,6 +25,11 @@ def show():
     print(request.form)
     """Previously in our show_user function, we didn't have access to the name and email from the form submission. Now, because of session, we have a way to access the name and email in a different function!"""
     return render_template('show.html', name_on_template=session['username'], email_on_template=session['useremail'])
+#Session in Templates
+"""Right now we are passing the information stored in session to the templates using named arguments. Session data is also available directly in our templates. That means we can do this:"""
+"""@app.route('/show')
+def show():
+    return render_template('show.html')"""
 
 """ As developers we should never render a template on a POST request.  If we do, then it could result in some disastrous consequences.
 
