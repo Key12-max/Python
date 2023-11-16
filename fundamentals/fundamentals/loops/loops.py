@@ -50,4 +50,7 @@ for val in capitals.values():
 for key, val in capitals.items():
     print(key, " = ", val)
 # output: Washington = Olympia, California = Sacramento, Idaho = Boise, etc
-
+#The provided code stub reads an integer, n, from STDIN. For all non-negative integers i<n , print i*i.
+n = int(input())
+for i in range(0,n):
+    print(i*i)
