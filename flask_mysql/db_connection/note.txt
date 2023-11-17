@@ -1,0 +1,6 @@
+new_project_folder $ pipenv install PyMySQL flask
+
+SELECT queries will return a list of dictionaries
+INSERT queries will return the auto-generated id of the inserted row
+UPDATE and DELETE queries will return nothing
+If the query goes wrong, it will return False

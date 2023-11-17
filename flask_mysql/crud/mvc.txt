@@ -1,0 +1,7 @@
+model, view, controller
+
+The controller handles the initial request and interacts with the view and the model to process data before it sends the final response back to the client.
+
+The model alone is responsible for fetching data and writing data to the database. Models, generally speaking, are classes that represent the rows in a database, that is, they model data. If any data is requested, the model will return the requested data to the controller, and from there the controller will pass data to the view engine.
+
+The view prepares the presentation for the client, dynamically adding any data needed before the response gets sent as html or another client-ready format and sends this prepared view back to the controller to send in an HTTP response to the client.
