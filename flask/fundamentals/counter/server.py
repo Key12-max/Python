@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, redirect
+from flask import Flask, render_template, session, redirect, request
 app = Flask(__name__)
 app.secret_key = 'keep it secret, keep it safe'
 
@@ -15,5 +15,12 @@ def clickToAdd():
 def clearsession():
     session.clear()
     return redirect('/')
+@app.route('/form', methods = ['POST'])
+def addValue():
+    session['value'] = request.form['number']
+    return redirect('/')
+@app.route('/form')
+def amount():
+    return render_template('form.html')
 if __name__ ==("__main__"):
     app.run(debug=True)
