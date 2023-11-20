@@ -11,22 +11,22 @@ Output Format
 
 For each command of type print, print the list on a new line.
 """
-N = int(input())
-mylist = []
-for i in range(N):
-    s = list(input().split())
-    if s[0] == "append":
-        mylist.append(int(s[1]))
-    if s[0]=='remove':
-        mylist.remove(int(s[1]))
-    s = list(input().split())
-    if s[0]=='insert':
-        mylist.insert(int(s[1]), int(s[2]))
-    if s[0]=='sort':
-        mylist.sort()
-    if s[0]=='pop':
-        mylist.pop()
-    if s[0]=='reverse':
-        mylist.reverse()
-    if s[0]=='print':
-        print(mylist)
+if __name__ == '__main__':
+    N = int(input())
+    the_list = list()
+    for _ in range(N):
+        query = input().split()
+        if query[0] == "print":
+            print(the_list)
+        elif query[0] == "insert":
+            the_list.insert(int(query[1]), int(query[2]))
+        elif query[0] == "remove":
+            the_list.remove(int(query[1]))
+        elif query[0] == "append":
+            the_list.append(int(query[1]))
+        elif query[0] == "sort":
+            the_list = sorted(the_list)
+        elif query[0] == "pop":
+            the_list.pop()
+        elif query[0] == "reverse":
+            the_list.reverse()
