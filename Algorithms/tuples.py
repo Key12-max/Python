@@ -23,6 +23,8 @@ Sample Output 0
 
 """
 N = int(input())
-mytuple = map(int, input().split('_'))
-t= tuple(mytuple)
+int_list = map(int, input().split())
+# then convert it to tuple using tuple constractor
+t= tuple(int_list)
+# print the hashed tuple
 print(hash(t))
