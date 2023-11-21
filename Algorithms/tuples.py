@@ -23,5 +23,6 @@ Sample Output 0
 
 """
 N = int(input())
-mytuple = tuple(map(int, input().split()))
-print(hash(mytuple))
+mytuple = map(int, input().split('_'))
+t= tuple(mytuple)
+print(hash(t))
