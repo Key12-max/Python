@@ -1,0 +1,20 @@
+Step 1:
+    Validation Method on Model
+Let's put some validations on our burger.  We are going to use @staticmethod to validate our form data:
+
+
+Flash
+Flash uses session so that we can "flash" our error messages on the form page.  Luckily, flash messages are strings that exist for just one redirect cycle!  The difference between flash and session is that flash messages only last for one redirect while session stays until it is manually popped. This makes flash messages perfect for validations where we only need to display the error or message temporarily!
+
+In order to use flash, we must import it into our models. Under the hood, flash messages utilize session, so we need to make sure that session is setup in our __init__.py.
+
+Now using flash is as easy as invoking the flash function and passing in a string message! Let's first see how this would look in the if statement. Next we'll see how to display the messages on the client-side.
+
+
+Step 2: Passing Form Data
+In our controller file, we accept a POST method and send validate the form using the Model:
+
+
+Step 3: Displaying Flash Messages on the Template
+
+
