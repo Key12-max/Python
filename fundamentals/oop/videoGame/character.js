@@ -21,8 +21,14 @@ class Character {
     }
     //attack method
     attack=(target)=>{
-        target.health-=this.strength*this.equipped_weapon.damage
-        console.log(target.health)
+        if(this.equipped_weapon.use_count>0){
+            target.health-=this.strength*this.equipped_weapon.damage
+            console.log(target.health)
+            this.equipped_weapon.use_new_weapon()
+
+        } else{
+            console.log("Your weapon is broke. Get new one")
+        }
         return this
     }
 }
