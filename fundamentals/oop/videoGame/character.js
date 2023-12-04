@@ -19,6 +19,16 @@ class Character {
         return this
 
     }
+    //drop weapon
+    drop_weapon = (weapon)=>{
+        if(weapon == this.equipped_weapon){
+            this.equipped_weapon = null
+        }
+        //lets use filter to use new list of weapons
+        this.weapons = this.weapons.filter(lis_el => lis_el != weapon)
+        console.log(this.weapons)
+        return this
+    }
     //attack method
     attack=(target)=>{
         if(this.equipped_weapon.use_count>0){
