@@ -1,0 +1,17 @@
+"""
+Create a function sum() that returns the sum of the two numbers passed as its arguments.
+
+For example, sum(2,5) should return 7; sum(3,10) should return 13.
+"""
+def sum(num1, num2):
+    print(num1+num2)
+
+sum(2,5)
+
+""" countdown by 8"""
+def countDown8(i):
+    k=2019
+    while k>1900:
+        k=k-i
+        print(k)
+countDown8(8)
