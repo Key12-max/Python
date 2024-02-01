@@ -25,7 +25,7 @@ class Character {
             this.equipped_weapon = null
         }
         //lets use filter to use new list of weapons
-        this.weapons = this.weapons.filter(lis_el => lis_el != weapon)
+        this.weapons = this.weapons.filter(lis_el => lis_el = weapon)
         console.log(this.weapons)
         return this
     }
