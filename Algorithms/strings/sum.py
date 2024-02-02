@@ -28,7 +28,7 @@ celciusToFahrenheit(8)
 Example: makeItBig([-1,3,5,-5]) returns that same array, changed to [-1,"big","big",-5]."""
 def makeItBig(arr):
     for i in range(len(arr)):
-        if arr[i]<=-1:
+        if arr[i]>=0:
             arr[i]=str("big")
             print(arr)
 makeItBig([-4,3,5,-5])
@@ -41,3 +41,46 @@ def double(arr2):
         result = arr2[i]*2
         print(result)
 double([1,2,3])
+
+"""
+Given an array and a value Y, count and return the number of array values greater than Y.
+
+For example, returnArrayCountGreaterThanY( [2,3,5], 4) should return 1 as there is only one element in the array whose value is greater than 4.
+"""
+def  returnArrayCountGreaterThanY(arr, y):
+    count = 0
+    for i in range(len(arr)):
+        if arr[i]>y:
+            count=count+1
+            print(count)
+returnArrayCountGreaterThanY([2,3,5],4)
+
+"""
+Just the Facts, ma’am. Factorials, that is. Write a function factorial(num) that, given a number, returns the product (multiplication) of all positive integers from 1 up to number (inclusive).
+
+For example, factorial(3)=6(or1 * 2 * 3);factorial(5)=120(or1 * 2 * 3 * 4 * 5).
+"""
+
+def factorial(num):
+    fact = 1
+    for i in range(1,num+1):
+        fact=fact*i
+        print(fact)
+factorial(5)
+
+
+"""
+Create threesFives(n) that adds values from 1 and n (inclusive) if that value is not divisible by 3 or 5. Return the final sum.
+
+For example, threesFives(10) returns 22 as it only returns the sum of 1, 2, 4, 7, and 8. In that example, it skips 3, 6, and 9 as those are divisible by 3. It also skips 5, and 10 as it's divisible by 5.
+
+"""
+def threeFives(n):
+    sum = 0
+    for i in range(1, n+1):
+        if n%5 !=0 and n%3!=0:
+            sum = sum+i
+            print(sum)
+threeFives(10)
+
+    
