@@ -27,8 +27,17 @@ celciusToFahrenheit(8)
 
 Example: makeItBig([-1,3,5,-5]) returns that same array, changed to [-1,"big","big",-5]."""
 def makeItBig(arr):
-    for i in arr:
-        if i <0:
-            arr[i]="big"
+    for i in range(len(arr)):
+        if arr[i]<=-1:
+            arr[i]=str("big")
             print(arr)
-makeItBig([-1,3,5,-5])
+makeItBig([-4,3,5,-5])
+
+"""
+Given an array, create a function to return a new array where each value in the original has been doubled. Calling double([1,2,3]) should return [2,4,6].
+"""
+def double(arr2):
+    for i in range(len(arr2)):
+        result = arr2[i]*2
+        print(result)
+double([1,2,3])
