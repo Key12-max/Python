@@ -113,3 +113,11 @@ def logPositiveNumbersCountingDownBy5():
         if i>0:
             print(i)
 logPositiveNumbersCountingDownBy5()
+
+print("===Given an array, print/log the sum of the first value in the array, plus the array’s length. Assume that the array is composed of numbers.===")
+def firstPlusLength(arr):
+    sum = 0
+    for i in range(len(arr)):
+        sum = arr[i]+len(arr)
+        print(sum)
+firstPlusLength([1,5,7,9,13])
