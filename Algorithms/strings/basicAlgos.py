@@ -109,8 +109,7 @@ multipleOf7()
 
 print("===Log positive numbers starting at 50, counting down by fives (exclude 0).===")
 def logPositiveNumbersCountingDownBy5():
-    i = 50
-    while i >0:
-        result = i-5
-        print(result)
+    for i in range(50,0,-5):
+        if i>0:
+            print(i)
 logPositiveNumbersCountingDownBy5()
