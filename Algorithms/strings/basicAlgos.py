@@ -121,3 +121,15 @@ def firstPlusLength(arr):
         sum = arr[i]+len(arr)
         print(sum)
 firstPlusLength([1,5,7,9,13])
+
+print("===Remove duplicate array from sorted array===")
+
+def removeDuplicates(nums):
+    uniquValueIndx = 0
+    for i in range(len[nums]):
+        if nums[i]!=nums[uniquValueIndx]:
+            uniquValueIndx+=1
+            nums[uniquValueIndx] = nums[i]
+            print(uniquValueIndx)
+
+removeDuplicates([1,1,2])
