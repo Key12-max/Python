@@ -126,10 +126,11 @@ print("===Remove duplicate array from sorted array===")
 
 def removeDuplicates(nums):
     uniquValueIndx = 0
-    for i in range(len[nums]):
+    for i in range(len(nums)):
         if nums[i]!=nums[uniquValueIndx]:
-            uniquValueIndx+=1
             nums[uniquValueIndx] = nums[i]
+            uniquValueIndx += 1
             print(uniquValueIndx)
+            print(nums)
 
 removeDuplicates([1,1,2])
