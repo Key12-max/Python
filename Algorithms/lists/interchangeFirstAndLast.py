@@ -47,3 +47,14 @@ def swapPositions(lis, pos1, pos2):
 List = [23, 65, 19, 90]
 pos1, pos2 = 1, 3
 print(swapPositions(List, pos1-1, pos2-1))
+
+print("===Determin length of lists with out using len method==")
+#initialize list
+test_list = [1, 4, 5, 7, 8]
+#finding length of list using loop
+#initializing counter
+counter = 0
+for i in test_list:
+    #increment counter
+    counter +=1
+print("Length of list using native method is : " + str(counter))
