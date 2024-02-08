@@ -124,13 +124,33 @@ firstPlusLength([1,5,7,9,13])
 
 print("===Remove duplicate array from sorted array===")
 #not quite solved yet.
-def removeDuplicates(nums):
+def removeDuplicates(nums,n):
+    #return, if array is empty or containws a single element
+    if n == 0 or n == 1:
+        return n
+    temp = list(range(n))
+    #start traversing elements
     count = 0
-    for i in range(len(nums)):
-        if nums[i]!=nums[count]:
-            nums[count] = nums[i]
+    for i in range(0, n-1):
+        if nums[i]!= nums[i+1]:
+            temp[count] = nums[i]
             count += 1
-            print(count)
-removeDuplicates([1,1,2])
+    #store the last element as whether it is unique or repeated, it is not stored previously
+    temp[count] = nums[n-1]
+    count += 1
+    #modify the original array
+    for i in range(0,count):
+            nums[i] = temp[i]
+            #print(nums[i])
+    return count
+if __name__ == '__main__':
+    nums = [0,0,1,1,1,2,2,3,3,4]
+    n = len(nums)
+    #removeDuplicates() returns new size of array
+    n = removeDuplicates(nums,n)
+    for i in range(n):
+        print("%d" % (nums[i]), end=" ")
+
+#removeDuplicates([],5)
 
 
