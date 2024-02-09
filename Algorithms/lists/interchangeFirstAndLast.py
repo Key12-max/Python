@@ -58,3 +58,17 @@ for i in test_list:
     #increment counter
     counter +=1
 print("Length of list using native method is : " + str(counter))
+
+def maxTwoNumber(a, b):
+    if a>b:
+        max = a
+        print(max)
+    else:
+        max = b
+        print(max)
+maxTwoNumber(-2,-4)
+# use  of ternary operator
+a,b = 2,8
+# Copy value of a in max if a>b else copy b
+max  = a if a>=b else b
+print(max)
