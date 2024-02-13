@@ -156,3 +156,14 @@ print("the list after element removal is : " + str(test_list1))
 # to remove list element 4
 test_list2 = [x for x in test_list2 if x != 4]
 print("The list after element removal is : " + str(test_list2))
+
+print("===Remove multiple element===")
+list1 = [11, 5, 17, 18, 23, 50]
+for ele in list1:
+    if ele % 2 == 0:
+        list1.remove(ele)
+print("New list after removing all even numbers: ", list1)
+
+#using comprehension
+list1 = [ elem for elem in list1 if elem % 2 != 0]
+print(*list1)
