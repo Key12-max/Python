@@ -144,3 +144,10 @@ def reverse_list(arr):
 arr = [1,2,3,4,5,6,7]
 print(reverse_list(arr))
 
+print("===ways to remove particular list element===")
+test_list1 = [1,3,4,6,3]
+test_list2 = [1,4,5,4,5]
+# using remove() to remove list element3
+# only first occurance deleted
+test_list1.remove(3)
+print("the list after element removal is : " + str(test_list1))
