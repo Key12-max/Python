@@ -151,3 +151,8 @@ test_list2 = [1,4,5,4,5]
 # only first occurance deleted
 test_list1.remove(3)
 print("the list after element removal is : " + str(test_list1))
+
+#using list comprehension
+# to remove list element 4
+test_list2 = [x for x in test_list2 if x != 4]
+print("The list after element removal is : " + str(test_list2))
