@@ -167,3 +167,11 @@ print("New list after removing all even numbers: ", list1)
 #using comprehension
 list1 = [ elem for elem in list1 if elem % 2 != 0]
 print(*list1)
+
+print("===concatenate every elements across lists ===")
+test_list1 = [[4,3,5,],[1,2,3],[3,7,4]]
+test_list2 = [[1,3],[9,3,5,7],[8]]
+
+for i in range(0, len(test_list1)):
+    test_list1[i].extend(test_list2[i])
+print("The concatenated Matrix: " + str(test_list1))
