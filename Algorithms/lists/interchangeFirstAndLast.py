@@ -175,3 +175,7 @@ test_list2 = [[1,3],[9,3,5,7],[8]]
 for i in range(0, len(test_list1)):
     test_list1[i].extend(test_list2[i])
 print("The concatenated Matrix: " + str(test_list1))
+#element repetiton in list
+test_list = [4, 5, 6, 3, 9]
+res = [i for i in test_list for x in (0,1)]
+print("The list after elemenet duplication " + str(res))
