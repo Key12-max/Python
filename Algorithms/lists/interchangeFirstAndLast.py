@@ -187,3 +187,22 @@ for i in range(0, len(test_list)):
     if(i%2 == 0):
         res.extend([test_list[i]]*k)
 print("The list after alternate repeating elements : " + str(res))
+
+print("===Deffirence between two list(list1-list2) ===")
+list1 = [10, 15, 20, 25, 30, 35, 40]
+list2 = [25, 40, 35]
+temp3 = []
+for elemenet in list1:
+    if elemenet not in list2:
+        temp3.append(elemenet)
+print(temp3)
+
+print("===Check if two lists are identical===")
+test_list1 = [1,2,3,4,5]
+test_list2 = [1,2,4,3,5]
+test_list1.sort()
+test_list2.sort()
+if test_list1 == test_list2:
+    print("The lists are identical ")
+else:
+    print("The lists are not identical")
