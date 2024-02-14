@@ -206,3 +206,22 @@ if test_list1 == test_list2:
     print("The lists are identical ")
 else:
     print("The lists are not identical")
+
+print("===combining two sorted lists===")
+test_list1 = [1, 5, 6, 9, 11]
+test_list2 = [3, 4, 7, 8, 10]
+size_1 = len(test_list1)
+print(size_1)
+size_2 = len(test_list2)
+print(size_2)
+res = []
+i,j = 0,0
+while i<size_1 and j<size_2:
+    if test_list1[i] < test_list2[j]:
+        res.append(test_list1[i])
+        i += 1
+    else:
+        res.append(test_list2[j])
+        j += 1
+res = res + test_list1[i:] + test_list2[j:]
+print("The combined sorted list is: " + str(res))
