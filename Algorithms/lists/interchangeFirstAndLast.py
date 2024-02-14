@@ -179,3 +179,11 @@ print("The concatenated Matrix: " + str(test_list1))
 test_list = [4, 5, 6, 3, 9]
 res = [i for i in test_list for x in (0,1)]
 print("The list after elemenet duplication " + str(res))
+#Repeat alternate elements in a list
+test_list = [4,5,6]
+k= 3
+res = []
+for i in range(0, len(test_list)):
+    if(i%2 == 0):
+        res.extend([test_list[i]]*k)
+print("The list after alternate repeating elements : " + str(res))
