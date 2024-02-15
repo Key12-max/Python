@@ -225,3 +225,11 @@ while i<size_1 and j<size_2:
         j += 1
 res = res + test_list1[i:] + test_list2[j:]
 print("The combined sorted list is: " + str(res))
+print("====copy or clone a list using slcicing technique===")
+def Cloning(lil):
+    li_copy = lil[:]
+    return li_copy
+lil = [4, 8, 2, 10, 15,18]
+li2 = Cloning(lil)
+print("Original List: ", lil)
+print("After Cloning: ", li2)
