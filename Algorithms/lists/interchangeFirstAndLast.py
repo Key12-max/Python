@@ -233,3 +233,15 @@ lil = [4, 8, 2, 10, 15,18]
 li2 = Cloning(lil)
 print("Original List: ", lil)
 print("After Cloning: ", li2)
+
+#python3 code to iterate over a list
+list = [1, 3, 5, 7, 9]
+#using enumerate()
+for i, val in enumerate(list):
+    print(i, ", ", val)
+
+#iterate over list using while loop.
+i = 0
+while i<len(list):
+    print(list[i])
+    i +=1
