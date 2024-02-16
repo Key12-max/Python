@@ -245,3 +245,7 @@ i = 0
 while i<len(list):
     print(list[i])
     i +=1
+#list comprehension
+numbers = [12, 13, 14]
+double = [x*2 for x in numbers]
+print(double)
