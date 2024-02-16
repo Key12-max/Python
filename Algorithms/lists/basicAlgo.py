@@ -246,6 +246,25 @@ while i<len(list):
     print(list[i])
     i +=1
 #list comprehension
+#snytax newList = [expression(element) for element in oldList if condition]
 numbers = [12, 13, 14]
 double = [x*2 for x in numbers]
 print(double)
+
+# even list using list comprehension
+
+list = [i for i in range(11) if i% 2 ==0]
+print(list)
+
+#matrix using list comprehension
+matrix = [[j for j in range(3)] for i in range(3)]
+print(matrix)
+
+#list comprehensions vs for loop
+list = []
+for character in 'Geeks 4 Geeks!':
+    list.append(character)
+print(list)
+
+list = [character for character in 'Geeks 4 Geeks!']
+print(list)
