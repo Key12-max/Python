@@ -285,3 +285,12 @@ if input_list1 == input_list2:
     print("The list are identical")
 else:
     print("This lists are not identical")
+print("===How to use printing function===")
+rand = [1,3,2,4,1,3,4,3,1]
+count = 0
+for i in range(0, len(rand)):
+    if rand[i]==1:
+        count+=1
+print(count)
+# or
+print(rand.count(1))
