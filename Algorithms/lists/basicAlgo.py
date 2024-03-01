@@ -268,3 +268,10 @@ print(list)
 
 list = [character for character in 'Geeks 4 Geeks!']
 print(list)
+
+print("====Concatenate two list of list===")
+input_list1 = [[4,3,5],[1,2,3],[3,7,4]]
+input_list2 = [[1,3], [9,3,5,7],[8]]
+for i in range(0, len(input_list1)):
+    input_list1[i].extend(input_list2[i])
+print("The concatenated Matix: " + str(input_list1))
