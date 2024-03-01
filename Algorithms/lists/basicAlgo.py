@@ -273,5 +273,15 @@ print("====Concatenate two list of list===")
 input_list1 = [[4,3,5],[1,2,3],[3,7,4]]
 input_list2 = [[1,3], [9,3,5,7],[8]]
 for i in range(0, len(input_list1)):
+    # extend method in python is used for extending lists by adding all the elements of the iterable at the end of privious list
     input_list1[i].extend(input_list2[i])
 print("The concatenated Matix: " + str(input_list1))
+
+print("===check if two list are identical==")
+
+input_list1.sort()
+input_list2.sort()
+if input_list1 == input_list2:
+    print("The list are identical")
+else:
+    print("This lists are not identical")
