@@ -294,3 +294,8 @@ for i in range(0, len(rand)):
 print(count)
 # or
 print(rand.count(1))
+#Slicing
+words = ["start", "going", "till", "the", "end"]
+print(words[1:])
+print(words[2:4])
+print(words[:4])
